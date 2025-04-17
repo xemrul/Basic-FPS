@@ -1,13 +1,43 @@
 body {
-    margin: 0;
-    overflow: hidden;
-    background: #000;
+  margin: 0;
+  overflow: hidden;
+  background-color: #111;
 }
 
-#game {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+canvas {
+  display: block;
+}
+
+#hud {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-family: Arial, sans-serif;
+  color: white;
+  z-index: 10;
+}
+
+#gameOver {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Arial';
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  z-index: 100;
+}
+
+button {
+  background-color: #444;
+  color: white;
+  font-size: 20px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #888;
 }
